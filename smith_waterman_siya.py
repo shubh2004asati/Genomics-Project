@@ -1,4 +1,13 @@
 # Includes smith waterman tested on NCBI seuqence
+'''
+Time Complexity:
+
+Maximum time is taken by the matrix filling step, time taken is O(mn) where m and n are the lengths of both sequences.
+
+After hashing we can consider the length of the ref genome to be 4m
+
+Therefore, time taken by smith-waterman algorithm is O(4m*m) = O(m^2)
+'''
 
 # Importing Python packages
 from enum import IntEnum

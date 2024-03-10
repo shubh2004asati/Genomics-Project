@@ -1,4 +1,14 @@
 # This code includes the hash function tested on a NCBI sequence, same test cases for smith-waterman
+'''
+Time Complexity:
+
+While loop that iterates through the sequence = O(n/k)
+Insert function = O(n) (worst case)
+
+Search function = O(m)
+
+Overall = O(n^2/k) + O(m^2/k) where n is the length of the sequence (ref genome) and m is the the length of the read
+'''
 
 class HashNode:
     def __init__(self, key):
